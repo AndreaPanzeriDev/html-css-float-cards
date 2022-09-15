@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kanit:wght@500&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Kanit:ital,wght@0,200;0,500;1,200&display=swap');
+
 
 *{
     padding: 0;
@@ -7,16 +8,21 @@
     box-sizing: border-box;
 }
 
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
 
 header, main{
     width: 70%;
     margin: auto;
-    text-align: center;
 }
 
 
 header{
     padding: 20px;;
+    text-align: center;
 }
 
 h1{
@@ -24,7 +30,38 @@ h1{
     font-family: 'Kanit', sans-serif;
 }
 
-p{
+header p{
     padding: 20px 0 20px 0;
     font-family: 'Kanit', sans-serif;
+}
+
+.columns{
+    background-color: rgb(29, 212, 84);
+}
+
+.col{
+    float: left;
+    width: calc(100%/3);
+    height: 150px;
+    background-color: black;
+}
+
+.col img{
+    float: left;
+    height: 100%;
+    margin-right: 50px;
+}
+
+div p{
+    color: white;
+    padding-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.name{
+    font-size: 20px;
+}
+
+.email{
+    color: #00a6f5;
 }
